@@ -74,24 +74,27 @@ android {
 
 dependencies {
 
-    implementation "$versions.plugins.kotlin"
-    implementation "$versions.deps.coroutines"
-    implementation "$versions.androidX.appCompat"
-    implementation "$versions.androidX.activity"
-    implementation "$versions.androidX.fragmentKtx"
-    implementation "$versions.androidX.ktx"
-    implementation "$versions.deps.material"
-    implementation "$versions.androidX.hiltCommon"
-    implementation "$versions.androidX.hiltLifeCycleVm"
-    implementation "$versions.deps.hiltAndroid"
-    implementation "$versions.deps.retrofit2"
-    implementation "$versions.deps.retrofit2Converter"
-    implementation "$versions.deps.retrofit2rxJavaAdapter"
-    implementation "$versions.deps.okhttpLoggingInterceptor"
-    implementation "$versions.deps.rxJava"
-    kapt "$versions.deps.hiltAndroidCompiler"
-    kapt "$versions.androidX.hiltCompiler"
-    testImplementation "$versions.deps.jUnit"
-    androidTestImplementation "$versions.androidX.junitExt"
-    androidTestImplementation "$versions.androidX.espresso"
+    implementation versions.plugins.kotlin
+    implementation versions.deps.coroutinesAndroid
+    implementation versions.deps.coroutinesCore
+    implementation versions.androidx.appCompat
+    implementation versions.androidx.activity
+    implementation versions.androidx.fragmentKtx
+    implementation versions.androidx.ktx
+    implementation versions.androidx.work
+    implementation versions.androidx.viewPager2
+    implementation versions.deps.material
+    implementation versions.androidx.hiltCommon
+    implementation versions.androidx.hiltLifeCycleVm
+    implementation versions.deps.hiltAndroid
+    implementation versions.deps.retrofit2
+    implementation versions.deps.retrofit2Converter
+    implementation versions.deps.retrofit2rxJavaAdapter
+    implementation versions.deps.okhttpLoggingInterceptor
+    implementation versions.deps.rxJava
+    kapt versions.deps.hiltAndroidCompiler
+    kapt versions.androidx.hiltCompiler
+    testImplementation versions.deps.jUnit
+    androidTestImplementation versions.androidx.junitExt
+    androidTestImplementation versions.androidx.espresso
 }
