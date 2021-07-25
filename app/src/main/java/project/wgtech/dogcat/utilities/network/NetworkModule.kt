@@ -1,4 +1,4 @@
-package project.wgtech.dogcat.util.network
+package project.wgtech.dogcat.utilities.network
 
 import androidx.viewbinding.BuildConfig
 import okhttp3.OkHttpClient
